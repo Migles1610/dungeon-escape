@@ -1,21 +1,21 @@
-#pragmaa once
+#pragma once
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 class Personagem {
-	string nome;
+	
+public:
+	std::string nome;
 	int vida;
 	int ataque;
 	
-	Personagem(string n, int v, int a)
+	Personagem(std::string n, int v, int a)
 		: nome(n), vida(v), ataque(a) {}
 		
 	void apresentar(){
-		cout << "Personagem: " << nome << endl;
-		cout << "Vida: " << vida << endl;
-		cout << "Ataque: " << ataque << endl;
+		std::cout << "Personagem: " << nome << std::endl;
+		std::cout << "Vida: " << vida << std::endl;
+		std::cout << "Ataque: " << ataque << std::endl;
 	}
 
 };
